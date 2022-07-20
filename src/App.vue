@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <app-number @itemAdded="logItem"></app-number>
+    <p class="result">Kết quả: {{arr}}</p>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import createNumber from './components/createNumber.vue';
 export default {
-  name: 'App',
+
+  data: function() {
+    return {
+      arr: '',
+    }
+  },
+
   components: {
-    HelloWorld
+    appNumber : createNumber
+  },
+
+  methods: {
+    logItem(item) {
+      if(typeof item == 'object') {
+        this.arr = `${item}`
+      }else {
+        this.arr = item
+      }
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .result {
+    border: 1px dashed blue;
+    width: 450px;
+    padding: 20px;
+    margin: auto;
+  }
 </style>
