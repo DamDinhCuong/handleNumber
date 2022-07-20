@@ -38,8 +38,8 @@ export default {
             const value = this.items;
             if(value.length > 0) {
                 for(var i = 0; i < value.length; i++) {
-                    if(isNaN(value[i])) {
-                        alert("Vui lòng nhập tất cả là số!!!")
+                    if(isNaN(value[i]) || value[i] == ' ') {
+                        alert("Vui lòng nhập tất cả là số và không có khoảng trắng!!!")
                         return this.clearForm()
                     }
                     else {
@@ -55,8 +55,8 @@ export default {
             const value = this.items;
             if(value.length > 0) {
                 for(var i = 0; i < value.length; i++) {
-                 if(isNaN(value[i])) {
-                        alert("Vui lòng nhập tất cả là số!!!");
+                 if(isNaN(value[i]) || value[i] == ' ') {
+                        alert("Vui lòng nhập tất cả là số và không có khoảng trắng!!!")
                         return this.clearForm()
                     }
                     else {
@@ -73,8 +73,8 @@ export default {
             const value = this.items;
             if(value.length > 0) {
                 for(var i = 0; i < value.length; i++) {
-                 if(isNaN(value[i])) {
-                        alert("Vui lòng nhập tất cả là số!!!");
+                 if(isNaN(value[i]) || value[i] == ' ') {
+                        alert("Vui lòng nhập tất cả là số và không có khoảng trắng!!!")
                         return this.clearForm()
                     }
                     else {
@@ -91,8 +91,8 @@ export default {
             const value = this.items;
             if(value.length > 0) {
                 for(var i = 0; i < value.length; i++) {
-                    if(isNaN(value[i])) {
-                        alert("Vui lòng nhập tất cả là số!!!")
+                    if(isNaN(value[i]) || value[i] == ' ') {
+                        alert("Vui lòng nhập tất cả là số và không có khoảng trắng!!!")
                         return this.clearForm()
                     }
                     else {
@@ -108,8 +108,8 @@ export default {
             const value = this.items;
             if(value.length > 0) {
                 for(var i = 0; i < value.length; i++) {
-                    if(isNaN(value[i])) {
-                        alert("Vui lòng nhập tất cả là số!!!")
+                    if(isNaN(value[i]) || value[i] == ' ') {
+                        alert("Vui lòng nhập tất cả là số và không có khoảng trắng!!!")
                         return this.clearForm()
                     }
                     else {
